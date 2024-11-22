@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/golf-caddy/static/css/main.4a3c4393.css",
+    "main.js": "/golf-caddy/static/js/main.2b1c5e0e.js",
+    "static/js/453.b3a3cf08.chunk.js": "/golf-caddy/static/js/453.b3a3cf08.chunk.js",
+    "index.html": "/golf-caddy/index.html",
+    "main.4a3c4393.css.map": "/golf-caddy/static/css/main.4a3c4393.css.map",
+    "main.2b1c5e0e.js.map": "/golf-caddy/static/js/main.2b1c5e0e.js.map",
+    "453.b3a3cf08.chunk.js.map": "/golf-caddy/static/js/453.b3a3cf08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a3c4393.css",
+    "static/js/main.2b1c5e0e.js"
+  ]
+}

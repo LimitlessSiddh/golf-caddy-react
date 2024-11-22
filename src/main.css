@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  background-color: #5c6f42; /* Main background color */
+  color: #f3ec99; /* Light yellow text */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #3d422e; /* Dark green header */
+  color: #f3ec99; /* Light yellow text */
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 2px solid #f3ec99; /* Light yellow border */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #3d060f; /* Dark maroon footer */
+  color: #f3ec99; /* Light yellow text */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #5c6f42; /* Main background */
+}
+
+/* Buttons */
+button {
+  background-color: #212914; /* Dark greenish-black */
+  color: #f3ec99; /* Light yellow text */
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #3d060f; /* Dark maroon on hover */
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid #f3ec99; /* Light yellow border when focused */
+}
+
+/* Input Fields */
+input[type="number"], input[type="text"], select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #212914; /* Dark greenish-black */
+  color: #f3ec99; /* Light yellow text */
+  margin: 10px 0;
+  width: 250px;
+}
+
+input[type="number"]:focus, input[type="text"]:focus, select:focus {
+  outline: none;
+  border: 2px solid #f3ec99; /* Focus border in light yellow */
+}
+
+/* Floating Buttons */
+.floating-hit-button {
+  background-color: #212914; /* Dark greenish-black */
+  color: #f3ec99; /* Light yellow text */
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.floating-hit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.progress-step {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f3ec99;
+}
+
+.completed {
+  background-color: #3d060f; /* Completed steps are maroon */
+}
+
+/* Final Score Section */
+.final-score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f3ec99;
+  margin-top: 20px;
+}
+
+.no-club-selected {
+  font-size: 16px;
+  color: #3d060f; /* Dark maroon */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Text Styles */
+h1, h2, h3, p {
+  color: #f3ec99; /* Light yellow text for headings */
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Club Selector Styles (from ClubSelector.css) */
+.club-selector-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5c6f42; /* Main background */
+  color: #f3ec99; /* Light yellow text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.club-selector {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #212914; /* Dark greenish-black */
+  color: #f3ec99; /* Light yellow text */
+  margin-bottom: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.club-selector:focus {
+  outline: none;
+  border: 2px solid #f3ec99; /* Highlight border when focused */
+}
+
+.select-club-button {
+  background-color: #212914; /* Dark greenish-black */
+  color: #f3ec99; /* Light yellow text */
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.select-club-button:hover {
+  background-color: #3d060f; /* Dark maroon */
+  transform: translateY(-2px);
+}
+
+.select-club-button:focus {
+  outline: none;
+  border: 2px solid #f3ec99;
+}
+
+.suggested-club {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #f3ec99;
+  font-weight: bold;
+}
+
+.no-club-selected {
+  font-size: 16px;
+  color: #3d060f; /* Dark maroon */
+  font-weight: bold;
+  margin-top: 10px;
+}
+

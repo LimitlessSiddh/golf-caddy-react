@@ -1,0 +1,72 @@
+/* Ensure content is properly spaced and not hidden behind sidebar */
+.course-container {
+    margin-left: 220px; /* Push content to the right to avoid overlap with sidebar */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow courses to wrap to next line */
+    justify-content: space-between; /* Distribute courses evenly */
+    gap: 20px; /* Space between course boxes */
+  }
+  
+  .course {
+    background-color: #212914; /* Dark background for course reviews */
+    color: #f3ec99; /* Light yellow text for contrast */
+    border-radius: 20px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add shadow for a subtle 3D effect */
+    width: calc(33% - 20px); /* Set each course to take up 1/3 width minus gap */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Add hover effect for courses */
+  .course:hover {
+    transform: translateY(-5px); /* Lift up the course box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+  }
+  
+  /* Heading inside each course */
+  .course h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: darkgreen; /* Green text for course names */
+    text-align: center;
+  }
+  
+  /* Paragraph text inside each course */
+  .course p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px; /* Add space between paragraphs */
+    text-align: justify;
+  }
+  
+  /* Make sure images inside course are responsive */
+  .course-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for images */
+  }
+  
+  /* Optional: Adjust content for smaller screens */
+  @media (max-width: 768px) {
+    .course-container {
+      margin-left: 0; /* Remove margin for mobile */
+      padding: 15px; /* Slightly less padding on small screens */
+    }
+  
+    .course {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 20px; /* Add margin between courses */
+    }
+  
+    .course h3 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .course p {
+      font-size: 14px; /* Smaller text on mobile */
+    }
+  }
+  
+  

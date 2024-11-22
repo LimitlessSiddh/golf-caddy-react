@@ -1,0 +1,25 @@
+/* Header Styling */
+.header {
+  background: none; /* Remove solid background */
+  color: #f3ec99; /* Light yellow text */
+  padding: 20px; /* Add spacing around */
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Brush Script MT', cursive; /* Cursive font */
+  font-size: 48px; /* Larger, elegant font size */
+  color: #f3ec99; /* Match footer color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for floating effect */
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-10px); /* Float upward slightly */
+  }
+}

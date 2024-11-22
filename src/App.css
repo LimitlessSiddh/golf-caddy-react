@@ -1,0 +1,116 @@
+/* General Body Styling */
+body {
+  background-color: #013220; /* Dark green background */
+  color: lightgreen; /* Light green text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Main App Styling */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full-page height */
+}
+
+/* Main Container Layout */
+.app-container {
+  display: flex; /* Side-by-side layout for sidebar and main content */
+  flex-grow: 1;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px; /* Fixed width for the sidebar */
+  height: 100%; /* Full height of the viewport */
+  background-color: #3d422e; /* Dark green */
+  color: lightgreen; /* Light green text */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
+  z-index: 1000; /* Ensures it's above other content */
+  overflow-y: auto; /* Adds scroll if content overflows */
+}
+
+/* Sidebar Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: lightgreen;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #f3ec99; /* Highlight color on hover */
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 220px; /* Leaves space for the sidebar */
+  padding: 20px;
+  background-color: #013220; /* Match body background */
+  color: lightgreen; /* Ensure consistent text color */
+  width: calc(100% - 220px); /* Adjust width for sidebar */
+  min-height: 100vh; /* Full height of viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start content from the top */
+}
+
+/* Header and Footer Styling */
+header, footer {
+  background-color: #5c6f42; /* Darker green tone */
+  color: lightgreen; /* Light green text */
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Button Styling */
+button {
+  background-color: #3d422e;
+  color: lightgreen;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c6f42;
+}
+
+/* Links in Main Content */
+.main-content a {
+  color: lightgreen;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-content a:hover {
+  color: #f3ec99; /* Light yellow */
+}
+
+  
+  
+  
+  
+  

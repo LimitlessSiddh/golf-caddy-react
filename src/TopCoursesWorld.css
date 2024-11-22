@@ -1,0 +1,40 @@
+/* Ensure content is properly spaced and not hidden behind sidebar */
+.course {
+    margin-left: 220px; /* Push content to the right to avoid overlap with sidebar */
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #212914;
+    color: #f3ec99;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: calc(100% - 220px); /* Adjust width to account for the sidebar */
+  }
+  
+  /* Heading inside each course */
+  .course h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph text inside each course */
+  .course p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Make sure images inside course are responsive */
+  .course-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Optional: Adjust content for smaller screens */
+  @media (max-width: 768px) {
+    .course {
+      margin-left: 0; /* Remove margin for mobile */
+      width: 100%; /* Full width on small screens */
+    }
+  }
+  
+  

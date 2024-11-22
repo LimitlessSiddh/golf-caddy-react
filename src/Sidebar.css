@@ -1,0 +1,43 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #3d422e;
+  color: #f3ec99;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f3ec99; /* Line under the title */
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #f3ec99; /* Line between categories */
+}
+
+.sidebar li:last-child {
+  border-bottom: none; /* Remove line after the last category */
+}
+
+.sidebar li:hover {
+  background-color: #212914;
+}
+
+
+  

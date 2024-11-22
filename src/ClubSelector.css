@@ -1,0 +1,105 @@
+/* Club Selector Styles */
+.club-selector-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5c6f42; /* Main background */
+  color: #f3ec99; /* Light yellow text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Stock Yardages Section */
+.stock-yardages-container {
+  display: flex;
+  flex-wrap: wrap;  /* Allow the items to wrap into multiple rows */
+  justify-content: space-between; /* Ensure items are spaced evenly */
+  width: 100%;
+  max-width: 1000px; /* Optional, to set a max width */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Individual Yardage Row */
+.yardage-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: calc(20% - 12px); /* Adjust width to allow 5 inputs per row with spacing */
+}
+
+/* Slider Container */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Yardage Slider */
+.yardage-slider {
+  width: 100%;
+  max-width: 300px; /* Max width for the slider */
+  margin-bottom: 10px;
+  background: #212914;
+  border-radius: 10px;
+}
+
+/* Styling the Slider Thumb */
+.yardage-slider::-webkit-slider-thumb {
+  background: #f3ec99;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+/* Yardage Display */
+.yardage-display {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f3ec99; /* Light yellow text */
+  margin-top: 5px;
+}
+
+/* Input Fields */
+.club-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px; /* Curved borders */
+  border: none;
+  background-color: #212914; /* Dark greenish-black */
+  color: #f3ec99; /* Light yellow text */
+  margin: 5px 0; /* Vertical space between inputs */
+  width: 100%;
+}
+
+/* Add horizontal margin between input fields */
+.club-input:not(:last-child) {
+  margin-right: 1cm; /* Adds space between input boxes horizontally */
+}
+
+/* Select Button */
+.select-club-button {
+  background-color: #3d422e; /* Dark green for Start Round */
+  color: #f3ec99; /* Light yellow text */
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.select-club-button:hover {
+  background-color: #212914; /* Dark greenish-black on hover */
+  transform: translateY(-2px);
+}
+
+  
+
+  
+  
